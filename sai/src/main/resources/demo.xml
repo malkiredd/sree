@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id = "adr" class="sai.Address">
+			<property name="strt" value = "SBI colony"></property>
+			<property name="city" value = "madanapalli"></property>
+			<property name="state" value = "AP"></property>
+	</bean>
+<bean id = "cst" class="sai.customer">
+			<property name="id" value = "101"></property>
+			<property name="name" value = "balaji"></property>
+			<property name="email" value = "mini2345@gmail.com"></property>
+			<property name="adr" ref="adr"></property>
+	</bean>
+	<bean id = "adr1" class="sai.Address">
+			<property name="strt" value = "Ramarao colony"></property>
+			<property name="city" value = "Kandur"></property>
+			<property name="state" value = "AP"></property>
+	</bean>
+	<bean id = "cst1" class="sai.customer">
+			<property name="id" value = "101"></property>
+			<property name="name" value = "harshitha"></property>
+			<property name="email" value = "mini23@gmail.com"></property>
+			<property name="adr" ref="adr1"></property>
+	</bean>
+	
+
+</beans>  
